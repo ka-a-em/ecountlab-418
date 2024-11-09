@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eCountLab | Coming Soon</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Full viewport container */
+        body, html {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #2E8B57, #006400);
+            color: #ffffff;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        /* Main content styling */
+        .content {
+            font-size: 2em;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        /* Footer styling */
+        footer {
+            position: absolute;
+            bottom: 20px;
+            font-size: 0.8em;
+            color: #aaaaaa;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <p>momenta dimana kita semua dipersatukan 🤲</p>
+    </div>
+    <footer>
+        &copy; eCountLab <span id="year"></span>
+    </footer>
+
+    <script>
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
